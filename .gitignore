@@ -1,0 +1,18 @@
+# Models and Large Files (CRITICAL - These are huge!)
+models/                              # ← Excludes entire models folder
+models/yolo_weights/                 # ← YOLO model weights
+models/realesrgan-ncnn-vulkan-20220424-windows/  # ← AI upscaling models
+*.pt                                 # ← PyTorch model files
+*.bin                                # ← Binary model files
+*.param                              # ← Model parameter files
+*.exe                                # ← Executable files
+*.dll                                # ← Dynamic library files
+
+# Test Output and Generated Files
+static/crops/                        # ← Generated crops
+static/results/                      # ← Analysis results
+static/uploads/                      # ← User uploads
+
+# Large media files
+*.mp4                                # ← Video files
+.env

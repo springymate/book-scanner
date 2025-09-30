@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Scanner</title>
+    <link rel="stylesheet" href="/frontend/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="logo">Book Scanner</h1>
+                <p class="tagline">Scan books to get personalized recommendations</p>
+            </div>
+        </header>
+
+        <!-- Progress Indicator -->
+        <div class="progress-indicator">
+            <div class="progress-step active" data-step="1">
+                <div class="step-circle">1</div>
+                <span class="step-label">Preferences</span>
+            </div>
+            <div class="progress-line"></div>
+            <div class="progress-step" data-step="2">
+                <div class="step-circle">2</div>
+                <span class="step-label">Book Upload</span>
+            </div>
+            <div class="progress-line"></div>
+            <div class="progress-step" data-step="3">
+                <div class="step-circle">3</div>
+                <span class="step-label">Recommendations</span>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Step 1: Preferences -->
+            <div class="step-container active" id="step1">
+                <div class="step-header">
+                    <h2>Tell us about your reading preferences</h2>
+                    <p>Select genres that interest you to help us provide better recommendations</p>
+                </div>
+                
+                <div class="genre-section">
+                    <h3>Select your favorite genres</h3>
+                    <div class="genre-grid" id="genreGrid">
+                        <!-- Genres will be populated by JavaScript -->
+                    </div>
+                    
+                    <div class="step-navigation">
+                        <button class="continue-btn" id="continueBtn" disabled>
+                            <span class="btn-text">Continue to Book Upload</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 2: Book Upload -->
+            <div class="step-container" id="step2" style="display: none;">
+                <div class="step-header">
+                    <h2>Upload a photo of books</h2>
+                    <p>Take a photo of a bookshelf or book collection you want recommendations for</p>
+                </div>
+                
+                <div class="upload-section">
+                    <div class="upload-zone" id="uploadZone">
+                        <div class="upload-content">
+                            <div class="upload-icon">
+                                <i class="fas fa-camera"></i>
+                            </div>
+                            <h3>Drag & Drop Your Image</h3>
+                            <p>or <button class="upload-btn" id="uploadBtn">Browse Files</button></p>
+                            <div class="upload-info">
+                                <small>Supports JPG, PNG, WebP (Max 10MB)</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <input type="file" id="fileInput" accept="image/*" hidden>
+                    
+                    <div class="image-preview" id="imagePreview" style="display: none;">
+                        <div class="preview-container">
+                            <img id="previewImg" alt="Preview">
+                            <div class="preview-overlay">
+                                <button class="change-image-btn" id="changeImageBtn">
+                                    <i class="fas fa-edit"></i> Change Image
+                                </button>
+                            </div>
+                        </div>
+                        <button class="analyze-btn" id="analyzeBtn">
+                            <i class="fas fa-search"></i>
+                            <span class="btn-text">Analyze Books</span>
+                        </button>
+                    </div>
+
+                    <!-- Detected Books Section -->
+                    <div class="detected-books-section" id="detectedBooksSection" style="display: none;">
+                        <h3>Detected Books (<span id="detectedBooksCount">0</span>)</h3>
+                        <div class="detected-books-grid" id="detectedBooksGrid"></div>
+                    </div>
+
+                    <div class="step-navigation">
+                        <button class="back-btn" id="backToPreferencesBtn">
+                            <i class="fas fa-arrow-left"></i>
+                            <span class="btn-text">Back to Preferences</span>
+                        </button>
+                        <button class="continue-btn" id="getRecommendationsBtn" disabled>
+                            <span class="btn-text">Get Recommendations</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 3: Recommendations -->
+            <div class="step-container" id="step3" style="display: none;">
+                <div class="step-header">
+                    <h2>Book Matches Based on Your Preferences</h2>
+                    <p>We've analyzed the books in your photo and matched them against your reading preferences. Here are the books that best match your taste.</p>
+                </div>
+                
+                <div class="loading-section" id="loadingSection" style="display: none;">
+                    <div class="loading-spinner">
+                        <div class="spinner"></div>
+                    </div>
+                    <h3>Analyzing your books</h3>
+                    <p>This may take a moment...</p>
+                </div>
+                
+                <div class="results-section" id="resultsSection">
+                    <div class="recommendations-header">
+                        <h3>Recommended for You</h3>
+                    </div>
+                    
+                    <div class="books-grid" id="booksGrid">
+                        <!-- Book cards will be populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <p>&copy; 2025 Book Scanner. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#" id="privacyLink">Privacy Policy</a>
+                    <a href="#" id="termsLink">Terms & Conditions</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="/frontend/script.js"></script>
+</body>
+</html>

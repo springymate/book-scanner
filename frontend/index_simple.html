@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📚 BookSpine Detector</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="logo">
+                    <i class="fas fa-book"></i>
+                    BookSpine Detector
+                </h1>
+                <p class="tagline">Upload a photo of book spines and get AI-powered analysis!</p>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Step 1: Upload -->
+            <div class="step-container active" id="step1">
+                <div class="step-header">
+                    <div class="step-number">1</div>
+                    <h2>Upload Book Spine Photo</h2>
+                    <p>Take a photo of book spines or upload an existing image</p>
+                </div>
+                
+                <div class="upload-section">
+                    <div class="upload-zone" id="uploadZone">
+                        <div class="upload-content">
+                            <div class="upload-icon">
+                                <i class="fas fa-cloud-upload-alt"></i>
+                            </div>
+                            <h3>Drag & Drop Your Image</h3>
+                            <p>or <button class="upload-btn" id="uploadBtn">Browse Files</button></p>
+                            <div class="upload-info">
+                                <small>Supports JPG, PNG, WebP (Max 10MB)</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <input type="file" id="fileInput" accept="image/*" hidden>
+                    
+                    <div class="image-preview" id="imagePreview" style="display: none;">
+                        <img id="previewImage" alt="Preview">
+                        <button class="remove-image" id="removeImage">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="step-actions">
+                    <button class="btn btn-primary" id="analyzeBtn" disabled>
+                        <i class="fas fa-search"></i>
+                        Analyze Book Spines
+                    </button>
+                </div>
+            </div>
+
+            <!-- Step 2: Analysis Results -->
+            <div class="step-container" id="step2">
+                <div class="step-header">
+                    <div class="step-number">2</div>
+                    <h2>Analysis Results</h2>
+                    <p>AI-powered book spine detection and analysis</p>
+                </div>
+                
+                <div class="loading" id="loading" style="display: none;">
+                    <div class="loading-spinner"></div>
+                    <p>Analyzing your image...</p>
+                </div>
+                
+                <div class="results-section" id="resultsSection" style="display: none;">
+                    <div class="results-summary">
+                        <h3>Detection Summary</h3>
+                        <div class="summary-stats" id="summaryStats">
+                            <!-- Stats will be populated by JavaScript -->
+                        </div>
+                    </div>
+                    
+                    <div class="detected-books" id="detectedBooks">
+                        <!-- Detected books will be populated by JavaScript -->
+                    </div>
+                    
+                    <div class="annotated-image" id="annotatedImage">
+                        <!-- Annotated image will be displayed here -->
+                    </div>
+                </div>
+                
+                <div class="error-message" id="errorMessage" style="display: none;">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <p id="errorText"></p>
+                </div>
+                
+                <div class="step-actions">
+                    <button class="btn btn-secondary" id="backBtn">
+                        <i class="fas fa-arrow-left"></i>
+                        Upload Another Image
+                    </button>
+                    <button class="btn btn-primary" id="downloadBtn" style="display: none;">
+                        <i class="fas fa-download"></i>
+                        Download Results
+                    </button>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2024 BookSpine Detector. Powered by AI and Computer Vision.</p>
+        </footer>
+    </div>
+
+    <script src="/static/script_simple.js"></script>
+</body>
+</html>
