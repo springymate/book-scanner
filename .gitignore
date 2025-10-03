@@ -16,3 +16,4 @@ static/uploads/                      # ← User uploads
 # Large media files
 *.mp4                                # ← Video files
 .env
+best.pt

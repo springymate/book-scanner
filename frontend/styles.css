@@ -197,6 +197,45 @@ body {
     pointer-events: none;
 }
 
+/* Preference Actions */
+.preference-actions {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.clear-all-btn {
+    background: #dc3545;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.clear-all-btn:not(:disabled):hover {
+    background: #c82333;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(220, 53, 69, 0.3);
+}
+
+.clear-all-btn:not(:disabled) {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.clear-all-btn i {
+    font-size: 0.8rem;
+}
+
 /* Upload Section */
 .upload-section {
     max-width: 600px;
@@ -243,7 +282,7 @@ body {
 }
 
 .upload-btn {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
     border: none;
     color: #ffffff;
     padding: 8px 16px;
@@ -358,18 +397,19 @@ body {
 
 .detected-books-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-    gap: 15px;
+    grid-template-columns: repeat(auto-fill, 140px);
+    gap: 20px;
+    justify-content: center;
 }
 
 .detected-book {
-    aspect-ratio: 2/3;
     background: #2a2a3e;
     border-radius: 8px;
     overflow: hidden;
     position: relative;
-    cursor: pointer;
+    cursor: default;
     transition: all 0.3s ease;
+    width: 140px;
 }
 
 .detected-book:hover {
@@ -417,7 +457,7 @@ body {
 }
 
 .continue-btn {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
     color: #ffffff;
 }
 
@@ -492,6 +532,20 @@ body {
     color: #a0a0a0;
     margin-bottom: 0;
     font-size: 1rem;
+}
+
+/* Recommendations Section */
+.recommendations-section {
+    margin-top: 40px;
+}
+
+/* Detected Books in Step 3 - Use single column layout */
+#detectedBooksGridStep3 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 /* Recommendation Filters */
@@ -834,6 +888,11 @@ body {
         font-size: 0.9rem;
     }
     
+    .detected-books-grid {
+        grid-template-columns: repeat(auto-fill, 130px);
+        gap: 18px;
+    }
+    
     .upload-zone {
         padding: 40px 20px;
     }
@@ -871,6 +930,11 @@ body {
     
     .books-grid {
         grid-template-columns: 1fr;
+    }
+    
+    .detected-books-grid {
+        grid-template-columns: repeat(auto-fill, 120px);
+        gap: 15px;
     }
     
     .step-header h2 {

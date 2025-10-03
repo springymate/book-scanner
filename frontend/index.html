@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Scanner</title>
-    <link rel="stylesheet" href="/frontend/styles.css">
+    <link rel="stylesheet" href="/frontend/styles.css?v=3.7">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -49,6 +49,13 @@
                     <h3>Select your favorite genres</h3>
                     <div class="genre-grid" id="genreGrid">
                         <!-- Genres will be populated by JavaScript -->
+                    </div>
+                    
+                    <div class="preference-actions">
+                        <button class="clear-all-btn" id="clearAllBtn" disabled>
+                            <i class="fas fa-trash-alt"></i>
+                            <span class="btn-text">Clear All Preferences</span>
+                        </button>
                     </div>
                     
                     <div class="step-navigation">
@@ -119,11 +126,6 @@
 
             <!-- Step 3: Recommendations -->
             <div class="step-container" id="step3" style="display: none;">
-                <div class="step-header">
-                    <h2>Book Matches Based on Your Preferences</h2>
-                    <p>We've analyzed the books in your photo and matched them against your reading preferences. Here are the books that best match your taste.</p>
-                </div>
-                
                 <div class="loading-section" id="loadingSection" style="display: none;">
                     <div class="loading-spinner">
                         <div class="spinner"></div>
@@ -133,12 +135,21 @@
                 </div>
                 
                 <div class="results-section" id="resultsSection">
-                    <div class="recommendations-header">
-                        <h3>Recommended for You</h3>
+                    <!-- Detected Books Section -->
+                    <div class="detected-books-section" id="detectedBooksSectionStep3">
+                        <h3>Your Detected Books (<span id="detectedBooksCountStep3">0</span>)</h3>
+                        <div class="detected-books-grid" id="detectedBooksGridStep3"></div>
                     </div>
                     
-                    <div class="books-grid" id="booksGrid">
-                        <!-- Book cards will be populated by JavaScript -->
+                    <!-- Recommendations Section -->
+                    <div class="recommendations-section">
+                        <div class="recommendations-header">
+                            <h3>Recommended for You</h3>
+                        </div>
+                        
+                        <div class="books-grid" id="booksGrid">
+                            <!-- Book cards will be populated by JavaScript -->
+                        </div>
                     </div>
                 </div>
             </div>
@@ -156,6 +167,6 @@
         </footer>
     </div>
 
-    <script src="/frontend/script.js"></script>
+    <script src="/frontend/script.js?v=3.7"></script>
 </body>
 </html>

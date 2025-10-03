@@ -1,0 +1,816 @@
+{
+  "file_id": "7de52b65-d742-4cee-b8d9-a8cd180be338",
+  "all_books": [
+    {
+      "title": "Deep Creek",
+      "author": "Pam Houston",
+      "genre": "Non-Fiction",
+      "primary_genre": "Fiction",
+      "secondary_genre": "Literary Fiction",
+      "tertiary_genre": "Nature Writing",
+      "spine_appearance": "The spine features the title \"Deep Creek\" in a prominent, larger font, with the author's name \"Pam Houston\" in smaller text below it. The color scheme appears to be a mix of dark and light colors, suggesting a serious or reflective tone.",
+      "reasoning": "The title is the most prominent text, indicating it is the main focus. The author's name is smaller and positioned below the title, which is a common layout for book spines. The genre is inferred based on the title and author, as well as the visual elements suggesting a literary or nature-focused theme.",
+      "uncertainty_notes": "None",
+      "isValid": true,
+      "rawText": "Vision Analysis",
+      "book_number": 7,
+      "bbox_coordinates": [
+        [
+          22.602035522460938,
+          33.66788101196289
+        ],
+        [
+          54.412471771240234,
+          33.66788101196289
+        ],
+        [
+          54.412471771240234,
+          182.4755401611328
+        ],
+        [
+          22.602035522460938,
+          182.4755401611328
+        ]
+      ],
+      "center": [
+        38.50725555419922,
+        108.07171630859375
+      ],
+      "width": 31.810436248779297,
+      "height": 148.8076629638672,
+      "angle": 0.0,
+      "crop_coordinates": {
+        "x_min": 0,
+        "y_min": 0,
+        "x_max": 31,
+        "y_max": 148
+      },
+      "confidence": "high",
+      "genre_confidence": "high",
+      "matching_genres": [
+        "Non-Fiction"
+      ],
+      "match_score": 1.0,
+      "match_percentage": 100
+    },
+    {
+      "title": "",
+      "author": "",
+      "genre": "Fiction",
+      "primary_genre": "Primary Genre",
+      "secondary_genre": "Secondary Genre",
+      "tertiary_genre": "Tertiary Genre",
+      "spine_appearance": "",
+      "reasoning": "",
+      "uncertainty_notes": "None",
+      "isValid": false,
+      "rawText": "Vision Analysis",
+      "book_number": 11,
+      "bbox_coordinates": [
+        [
+          39.476318359375,
+          44.44356918334961
+        ],
+        [
+          63.59047317504883,
+          44.44356918334961
+        ],
+        [
+          63.59047317504883,
+          142.7861785888672
+        ],
+        [
+          39.476318359375,
+          142.7861785888672
+        ]
+      ],
+      "center": [
+        51.53339385986328,
+        93.6148681640625
+      ],
+      "width": 24.114154815673828,
+      "height": 98.34260559082031,
+      "angle": 0.0,
+      "crop_coordinates": {
+        "x_min": 0,
+        "y_min": 0,
+        "x_max": 24,
+        "y_max": 98
+      },
+      "confidence": "low",
+      "genre_confidence": "high"
+    },
+    {
+      "title": "",
+      "author": "",
+      "genre": "Fiction",
+      "primary_genre": "Primary Genre",
+      "secondary_genre": "Secondary Genre",
+      "tertiary_genre": "Tertiary Genre",
+      "spine_appearance": "",
+      "reasoning": "",
+      "uncertainty_notes": "Text is partially illegible and lacks clear patterns for identification.",
+      "isValid": false,
+      "rawText": "Vision Analysis",
+      "book_number": 10,
+      "bbox_coordinates": [
+        [
+          39.663211822509766,
+          45.07143020629883
+        ],
+        [
+          66.67742919921875,
+          45.07143020629883
+        ],
+        [
+          66.67742919921875,
+          177.41773986816406
+        ],
+        [
+          39.663211822509766,
+          177.41773986816406
+        ]
+      ],
+      "center": [
+        53.170318603515625,
+        111.24458312988281
+      ],
+      "width": 27.014217376708984,
+      "height": 132.3463134765625,
+      "angle": 0.0,
+      "crop_coordinates": {
+        "x_min": 0,
+        "y_min": 0,
+        "x_max": 27,
+        "y_max": 132
+      },
+      "confidence": "low",
+      "genre_confidence": "high"
+    },
+    {
+      "title": "Gardening Life",
+      "author": "Beatrix Potter",
+      "genre": "Non-Fiction",
+      "primary_genre": "Primary Genre: Non-Fiction",
+      "secondary_genre": "Secondary Genre: Gardening",
+      "tertiary_genre": "Tertiary Genre: Nature",
+      "spine_appearance": "The spine features large text for the title \"GARDENING LIFE\" and smaller text for the author \"BEATRIX POTTER'S.\" The layout is straightforward, with the title prominently displayed.",
+      "reasoning": "The title is the most prominent text, indicating it is the main focus. The author's name appears in smaller text, consistent with typical book spine layouts. The genre is inferred from the title and author, as Beatrix Potter is known for her works related to nature and gardening.",
+      "uncertainty_notes": "None",
+      "isValid": true,
+      "rawText": "Vision Analysis",
+      "book_number": 3,
+      "bbox_coordinates": [
+        [
+          50.0908088684082,
+          32.4600715637207
+        ],
+        [
+          87.52586364746094,
+          32.4600715637207
+        ],
+        [
+          87.52586364746094,
+          166.37570190429688
+        ],
+        [
+          50.0908088684082,
+          166.37570190429688
+        ]
+      ],
+      "center": [
+        68.80833435058594,
+        99.41788482666016
+      ],
+      "width": 37.435054779052734,
+      "height": 133.91563415527344,
+      "angle": 0.0,
+      "crop_coordinates": {
+        "x_min": 0,
+        "y_min": 0,
+        "x_max": 37,
+        "y_max": 133
+      },
+      "confidence": "high",
+      "genre_confidence": "high",
+      "matching_genres": [
+        "Non-Fiction"
+      ],
+      "match_score": 1.0,
+      "match_percentage": 100
+    },
+    {
+      "title": "The Last of Miss Judith Mutt",
+      "author": "Unknown",
+      "genre": "Fiction",
+      "primary_genre": "Fiction",
+      "secondary_genre": "Mystery",
+      "tertiary_genre": "Drama",
+      "spine_appearance": "The spine features a light blue background with the title in larger text and the author's name in smaller text. There are decorative elements, possibly indicating a whimsical or light-hearted tone.",
+      "reasoning": "The title is the most prominent text, while the author's name appears smaller, consistent with typical book spine layouts. The use of \"Miss\" in the title suggests a character-driven narrative, which aligns with the identified genres.",
+      "uncertainty_notes": "Need Validation - The author's name is unclear and not fully visible.",
+      "isValid": false,
+      "rawText": "Vision Analysis",
+      "book_number": 9,
+      "bbox_coordinates": [
+        [
+          71.85816192626953,
+          35.69625473022461
+        ],
+        [
+          102.1521987915039,
+          35.69625473022461
+        ],
+        [
+          102.1521987915039,
+          150.8005828857422
+        ],
+        [
+          71.85816192626953,
+          150.8005828857422
+        ]
+      ],
+      "center": [
+        87.00518035888672,
+        93.2484130859375
+      ],
+      "width": 30.294036865234375,
+      "height": 115.10432434082031,
+      "angle": 0.0,
+      "crop_coordinates": {
+        "x_min": 0,
+        "y_min": 0,
+        "x_max": 30,
+        "y_max": 115
+      },
+      "confidence": "low",
+      "genre_confidence": "high",
+      "matching_genres": [
+        "Non-Fiction"
+      ],
+      "match_score": 1.0,
+      "match_percentage": 100
+    },
+    {
+      "title": "Unknown",
+      "author": "Unknown",
+      "genre": "Fiction",
+      "primary_genre": "Unknown",
+      "secondary_genre": "Unknown",
+      "tertiary_genre": "Unknown",
+      "spine_appearance": "The spine has a bright pink background with large, colorful text that appears to read \"CLOCK\" with a possible prefix that is not fully visible.",
+      "reasoning": "The text layout suggests a prominent title, but the obscured text prevents clear identification of both the title and author. The color scheme may indicate a children's or young adult genre, but this is speculative.",
+      "uncertainty_notes": "Text is partially illegible, and no recognizable patterns match standard book spine layouts.",
+      "isValid": false,
+      "rawText": "Vision Analysis",
+      "book_number": 8,
+      "bbox_coordinates": [
+        [
+          91.08460998535156,
+          41.3721923828125
+        ],
+        [
+          118.49817657470703,
+          41.3721923828125
+        ],
+        [
+          118.49817657470703,
+          145.95469665527344
+        ],
+        [
+          91.08460998535156,
+          145.95469665527344
+        ]
+      ],
+      "center": [
+        104.79139709472656,
+        93.66344451904297
+      ],
+      "width": 27.41356658935547,
+      "height": 104.58250427246094,
+      "angle": 0.0,
+      "crop_coordinates": {
+        "x_min": 0,
+        "y_min": 0,
+        "x_max": 27,
+        "y_max": 104
+      },
+      "confidence": "low",
+      "genre_confidence": "high"
+    },
+    {
+      "title": "",
+      "author": "",
+      "genre": "Fiction",
+      "primary_genre": "Primary Genre",
+      "secondary_genre": "Secondary Genre",
+      "tertiary_genre": "Tertiary Genre",
+      "spine_appearance": "",
+      "reasoning": "",
+      "uncertainty_notes": "None",
+      "isValid": false,
+      "rawText": "Vision Analysis",
+      "book_number": 6,
+      "bbox_coordinates": [
+        [
+          105.53421783447266,
+          31.649797439575195
+        ],
+        [
+          131.3755645751953,
+          31.649797439575195
+        ],
+        [
+          131.3755645751953,
+          146.24542236328125
+        ],
+        [
+          105.53421783447266,
+          146.24542236328125
+        ]
+      ],
+      "center": [
+        118.45488739013672,
+        88.9476089477539
+      ],
+      "width": 25.841346740722656,
+      "height": 114.59562683105469,
+      "angle": 0.0,
+      "crop_coordinates": {
+        "x_min": 0,
+        "y_min": 0,
+        "x_max": 25,
+        "y_max": 114
+      },
+      "confidence": "low",
+      "genre_confidence": "high"
+    },
+    {
+      "title": "CARROTS LOVE TOMATOES",
+      "author": "KELLY HARRIS",
+      "genre": "Non-Fiction",
+      "primary_genre": "Primary Genre: Gardening",
+      "secondary_genre": "Secondary Genre: Non-Fiction",
+      "tertiary_genre": "Tertiary Genre: Self-Help",
+      "spine_appearance": "The title is prominently displayed in large, bold text, while the author's name is in smaller text above it. The color scheme is light blue with white text, suggesting a fresh and approachable theme.",
+      "reasoning": "The title \"CARROTS LOVE TOMATOES\" is the most prominent text, indicating it is the title of the book. The smaller text \"KELLY HARRIS\" is likely the author's name, following the common pattern of author names being less prominent than titles. The title suggests a focus on gardening, particularly companion planting, which aligns with the identified genres.",
+      "uncertainty_notes": "None",
+      "isValid": true,
+      "rawText": "Vision Analysis",
+      "book_number": 1,
+      "bbox_coordinates": [
+        [
+          122.23289489746094,
+          34.399478912353516
+        ],
+        [
+          156.39471435546875,
+          34.399478912353516
+        ],
+        [
+          156.39471435546875,
+          183.5186309814453
+        ],
+        [
+          122.23289489746094,
+          183.5186309814453
+        ]
+      ],
+      "center": [
+        139.31381225585938,
+        108.95906066894531
+      ],
+      "width": 34.16181945800781,
+      "height": 149.11915588378906,
+      "angle": 0.0,
+      "crop_coordinates": {
+        "x_min": 0,
+        "y_min": 0,
+        "x_max": 34,
+        "y_max": 149
+      },
+      "confidence": "high",
+      "genre_confidence": "high",
+      "matching_genres": [
+        "Non-Fiction"
+      ],
+      "match_score": 1.0,
+      "match_percentage": 100
+    },
+    {
+      "title": "Carrots Love Tomatoes",
+      "author": "None",
+      "genre": "Non-Fiction",
+      "primary_genre": "Primary Genre: Gardening",
+      "secondary_genre": "Secondary Genre: Non-Fiction",
+      "tertiary_genre": "Tertiary Genre: Reference",
+      "spine_appearance": "The spine features a dark background with large white text for the title, indicating prominence. The author is not visible, suggesting it may not be a well-known author or that the name is not included.",
+      "reasoning": "The title \"Carrots Love Tomatoes\" is the most prominent text, indicating it is the title of the book. The absence of visible author information suggests it may be a lesser-known work or a reference guide. The title itself suggests a focus on gardening, particularly companion planting, which aligns with the identified genres.",
+      "uncertainty_notes": "None",
+      "isValid": true,
+      "rawText": "Vision Analysis",
+      "book_number": 2,
+      "bbox_coordinates": [
+        [
+          135.49386596679688,
+          20.848466873168945
+        ],
+        [
+          171.3031768798828,
+          20.848466873168945
+        ],
+        [
+          171.3031768798828,
+          183.87332153320312
+        ],
+        [
+          135.49386596679688,
+          183.87332153320312
+        ]
+      ],
+      "center": [
+        153.39852905273438,
+        102.36089324951172
+      ],
+      "width": 35.80931091308594,
+      "height": 163.0248565673828,
+      "angle": 0.0,
+      "crop_coordinates": {
+        "x_min": 0,
+        "y_min": 0,
+        "x_max": 35,
+        "y_max": 163
+      },
+      "confidence": "high",
+      "genre_confidence": "high",
+      "matching_genres": [
+        "Non-Fiction"
+      ],
+      "match_score": 1.0,
+      "match_percentage": 100
+    },
+    {
+      "title": "None",
+      "author": "None",
+      "genre": "Fiction",
+      "primary_genre": "None",
+      "secondary_genre": "None",
+      "tertiary_genre": "None",
+      "spine_appearance": "The spine features multiple books with varying colors and text sizes, but specific details are not discernible.",
+      "reasoning": "The text is not clearly visible, and there are no recognizable patterns that match standard book spine layouts.",
+      "uncertainty_notes": "The image quality is too poor to read, and the text is completely illegible.",
+      "isValid": true,
+      "rawText": "Vision Analysis",
+      "book_number": 5,
+      "bbox_coordinates": [
+        [
+          151.4227752685547,
+          35.69809341430664
+        ],
+        [
+          183.6396484375,
+          35.69809341430664
+        ],
+        [
+          183.6396484375,
+          182.8487091064453
+        ],
+        [
+          151.4227752685547,
+          182.8487091064453
+        ]
+      ],
+      "center": [
+        167.53121948242188,
+        109.27340698242188
+      ],
+      "width": 32.21687316894531,
+      "height": 147.15061950683594,
+      "angle": 0.0,
+      "crop_coordinates": {
+        "x_min": 0,
+        "y_min": 0,
+        "x_max": 32,
+        "y_max": 147
+      },
+      "confidence": "high",
+      "genre_confidence": "high"
+    },
+    {
+      "title": "Simply Real Eating",
+      "author": "Need Validation (author name is not visible)",
+      "genre": "Non-Fiction",
+      "primary_genre": "Primary Genre: Cooking",
+      "secondary_genre": "Secondary Genre: Health & Wellness",
+      "tertiary_genre": "Tertiary Genre: Lifestyle",
+      "spine_appearance": "The title \"SIMPLY REAL EATIN\" is prominently displayed in large text, suggesting it is the main focus of the spine. The text appears to be in a clean, modern font, which is typical for contemporary cooking or lifestyle books.",
+      "reasoning": "The title is clear and prominent, indicating it is the main element of the spine. However, the author's name is not visible, leading to uncertainty in that area. The genre is inferred based on the title's content, which suggests a focus on cooking and healthy eating.",
+      "uncertainty_notes": "Need Validation (author name is not visible).",
+      "isValid": false,
+      "rawText": "Vision Analysis",
+      "book_number": 4,
+      "bbox_coordinates": [
+        [
+          159.2157440185547,
+          0.0
+        ],
+        [
+          205.07212829589844,
+          0.0
+        ],
+        [
+          205.07212829589844,
+          184.00918579101562
+        ],
+        [
+          159.2157440185547,
+          184.00918579101562
+        ]
+      ],
+      "center": [
+        182.14393615722656,
+        92.00459289550781
+      ],
+      "width": 45.85638427734375,
+      "height": 184.00918579101562,
+      "angle": 0.0,
+      "crop_coordinates": {
+        "x_min": 0,
+        "y_min": 0,
+        "x_max": 45,
+        "y_max": 184
+      },
+      "confidence": "low",
+      "genre_confidence": "high"
+    }
+  ],
+  "filtered_books": [
+    {
+      "title": "Deep Creek",
+      "author": "Pam Houston",
+      "genre": "Non-Fiction",
+      "primary_genre": "Fiction",
+      "secondary_genre": "Literary Fiction",
+      "tertiary_genre": "Nature Writing",
+      "spine_appearance": "The spine features the title \"Deep Creek\" in a prominent, larger font, with the author's name \"Pam Houston\" in smaller text below it. The color scheme appears to be a mix of dark and light colors, suggesting a serious or reflective tone.",
+      "reasoning": "The title is the most prominent text, indicating it is the main focus. The author's name is smaller and positioned below the title, which is a common layout for book spines. The genre is inferred based on the title and author, as well as the visual elements suggesting a literary or nature-focused theme.",
+      "uncertainty_notes": "None",
+      "isValid": true,
+      "rawText": "Vision Analysis",
+      "book_number": 7,
+      "bbox_coordinates": [
+        [
+          22.602035522460938,
+          33.66788101196289
+        ],
+        [
+          54.412471771240234,
+          33.66788101196289
+        ],
+        [
+          54.412471771240234,
+          182.4755401611328
+        ],
+        [
+          22.602035522460938,
+          182.4755401611328
+        ]
+      ],
+      "center": [
+        38.50725555419922,
+        108.07171630859375
+      ],
+      "width": 31.810436248779297,
+      "height": 148.8076629638672,
+      "angle": 0.0,
+      "crop_coordinates": {
+        "x_min": 0,
+        "y_min": 0,
+        "x_max": 31,
+        "y_max": 148
+      },
+      "confidence": "high",
+      "genre_confidence": "high",
+      "matching_genres": [
+        "Non-Fiction"
+      ],
+      "match_score": 1.0,
+      "match_percentage": 100
+    },
+    {
+      "title": "Gardening Life",
+      "author": "Beatrix Potter",
+      "genre": "Non-Fiction",
+      "primary_genre": "Primary Genre: Non-Fiction",
+      "secondary_genre": "Secondary Genre: Gardening",
+      "tertiary_genre": "Tertiary Genre: Nature",
+      "spine_appearance": "The spine features large text for the title \"GARDENING LIFE\" and smaller text for the author \"BEATRIX POTTER'S.\" The layout is straightforward, with the title prominently displayed.",
+      "reasoning": "The title is the most prominent text, indicating it is the main focus. The author's name appears in smaller text, consistent with typical book spine layouts. The genre is inferred from the title and author, as Beatrix Potter is known for her works related to nature and gardening.",
+      "uncertainty_notes": "None",
+      "isValid": true,
+      "rawText": "Vision Analysis",
+      "book_number": 3,
+      "bbox_coordinates": [
+        [
+          50.0908088684082,
+          32.4600715637207
+        ],
+        [
+          87.52586364746094,
+          32.4600715637207
+        ],
+        [
+          87.52586364746094,
+          166.37570190429688
+        ],
+        [
+          50.0908088684082,
+          166.37570190429688
+        ]
+      ],
+      "center": [
+        68.80833435058594,
+        99.41788482666016
+      ],
+      "width": 37.435054779052734,
+      "height": 133.91563415527344,
+      "angle": 0.0,
+      "crop_coordinates": {
+        "x_min": 0,
+        "y_min": 0,
+        "x_max": 37,
+        "y_max": 133
+      },
+      "confidence": "high",
+      "genre_confidence": "high",
+      "matching_genres": [
+        "Non-Fiction"
+      ],
+      "match_score": 1.0,
+      "match_percentage": 100
+    },
+    {
+      "title": "The Last of Miss Judith Mutt",
+      "author": "Unknown",
+      "genre": "Fiction",
+      "primary_genre": "Fiction",
+      "secondary_genre": "Mystery",
+      "tertiary_genre": "Drama",
+      "spine_appearance": "The spine features a light blue background with the title in larger text and the author's name in smaller text. There are decorative elements, possibly indicating a whimsical or light-hearted tone.",
+      "reasoning": "The title is the most prominent text, while the author's name appears smaller, consistent with typical book spine layouts. The use of \"Miss\" in the title suggests a character-driven narrative, which aligns with the identified genres.",
+      "uncertainty_notes": "Need Validation - The author's name is unclear and not fully visible.",
+      "isValid": false,
+      "rawText": "Vision Analysis",
+      "book_number": 9,
+      "bbox_coordinates": [
+        [
+          71.85816192626953,
+          35.69625473022461
+        ],
+        [
+          102.1521987915039,
+          35.69625473022461
+        ],
+        [
+          102.1521987915039,
+          150.8005828857422
+        ],
+        [
+          71.85816192626953,
+          150.8005828857422
+        ]
+      ],
+      "center": [
+        87.00518035888672,
+        93.2484130859375
+      ],
+      "width": 30.294036865234375,
+      "height": 115.10432434082031,
+      "angle": 0.0,
+      "crop_coordinates": {
+        "x_min": 0,
+        "y_min": 0,
+        "x_max": 30,
+        "y_max": 115
+      },
+      "confidence": "low",
+      "genre_confidence": "high",
+      "matching_genres": [
+        "Non-Fiction"
+      ],
+      "match_score": 1.0,
+      "match_percentage": 100
+    },
+    {
+      "title": "CARROTS LOVE TOMATOES",
+      "author": "KELLY HARRIS",
+      "genre": "Non-Fiction",
+      "primary_genre": "Primary Genre: Gardening",
+      "secondary_genre": "Secondary Genre: Non-Fiction",
+      "tertiary_genre": "Tertiary Genre: Self-Help",
+      "spine_appearance": "The title is prominently displayed in large, bold text, while the author's name is in smaller text above it. The color scheme is light blue with white text, suggesting a fresh and approachable theme.",
+      "reasoning": "The title \"CARROTS LOVE TOMATOES\" is the most prominent text, indicating it is the title of the book. The smaller text \"KELLY HARRIS\" is likely the author's name, following the common pattern of author names being less prominent than titles. The title suggests a focus on gardening, particularly companion planting, which aligns with the identified genres.",
+      "uncertainty_notes": "None",
+      "isValid": true,
+      "rawText": "Vision Analysis",
+      "book_number": 1,
+      "bbox_coordinates": [
+        [
+          122.23289489746094,
+          34.399478912353516
+        ],
+        [
+          156.39471435546875,
+          34.399478912353516
+        ],
+        [
+          156.39471435546875,
+          183.5186309814453
+        ],
+        [
+          122.23289489746094,
+          183.5186309814453
+        ]
+      ],
+      "center": [
+        139.31381225585938,
+        108.95906066894531
+      ],
+      "width": 34.16181945800781,
+      "height": 149.11915588378906,
+      "angle": 0.0,
+      "crop_coordinates": {
+        "x_min": 0,
+        "y_min": 0,
+        "x_max": 34,
+        "y_max": 149
+      },
+      "confidence": "high",
+      "genre_confidence": "high",
+      "matching_genres": [
+        "Non-Fiction"
+      ],
+      "match_score": 1.0,
+      "match_percentage": 100
+    },
+    {
+      "title": "Carrots Love Tomatoes",
+      "author": "None",
+      "genre": "Non-Fiction",
+      "primary_genre": "Primary Genre: Gardening",
+      "secondary_genre": "Secondary Genre: Non-Fiction",
+      "tertiary_genre": "Tertiary Genre: Reference",
+      "spine_appearance": "The spine features a dark background with large white text for the title, indicating prominence. The author is not visible, suggesting it may not be a well-known author or that the name is not included.",
+      "reasoning": "The title \"Carrots Love Tomatoes\" is the most prominent text, indicating it is the title of the book. The absence of visible author information suggests it may be a lesser-known work or a reference guide. The title itself suggests a focus on gardening, particularly companion planting, which aligns with the identified genres.",
+      "uncertainty_notes": "None",
+      "isValid": true,
+      "rawText": "Vision Analysis",
+      "book_number": 2,
+      "bbox_coordinates": [
+        [
+          135.49386596679688,
+          20.848466873168945
+        ],
+        [
+          171.3031768798828,
+          20.848466873168945
+        ],
+        [
+          171.3031768798828,
+          183.87332153320312
+        ],
+        [
+          135.49386596679688,
+          183.87332153320312
+        ]
+      ],
+      "center": [
+        153.39852905273438,
+        102.36089324951172
+      ],
+      "width": 35.80931091308594,
+      "height": 163.0248565673828,
+      "angle": 0.0,
+      "crop_coordinates": {
+        "x_min": 0,
+        "y_min": 0,
+        "x_max": 35,
+        "y_max": 163
+      },
+      "confidence": "high",
+      "genre_confidence": "high",
+      "matching_genres": [
+        "Non-Fiction"
+      ],
+      "match_score": 1.0,
+      "match_percentage": 100
+    }
+  ],
+  "selected_genres": [
+    "Non-Fiction"
+  ],
+  "genre_matches": {
+    "Non-Fiction": 5
+  },
+  "analysis_timestamp": "C:\\Users\\yash.jain\\OneDrive - Heuristics Informatics Pvt. Ltd\\Desktop\\Python\\Bookself scanner\\book-scanner-main"
+}

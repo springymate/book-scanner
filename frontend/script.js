@@ -85,17 +85,41 @@ class BookScanner {
     // Update continue button state
     updateContinueButton() {
         const continueBtn = document.getElementById('continueBtn');
+        const clearAllBtn = document.getElementById('clearAllBtn');
         const isEnabled = this.selectedGenres.size > 0;
         
         continueBtn.disabled = !isEnabled;
+        clearAllBtn.disabled = !isEnabled;
         
         if (isEnabled) {
             continueBtn.style.opacity = '1';
             continueBtn.style.cursor = 'pointer';
+            clearAllBtn.style.opacity = '1';
+            clearAllBtn.style.pointerEvents = 'auto';
         } else {
             continueBtn.style.opacity = '0.6';
             continueBtn.style.cursor = 'not-allowed';
+            clearAllBtn.style.opacity = '0.6';
+            clearAllBtn.style.pointerEvents = 'none';
         }
+    }
+
+    // Clear all selected preferences
+    clearAllPreferences() {
+        // Clear all selected genres
+        this.selectedGenres.clear();
+        
+        // Remove selected class from all genre items
+        const genreItems = document.querySelectorAll('.genre-item');
+        genreItems.forEach(item => {
+            item.classList.remove('selected');
+        });
+        
+        // Update button states
+        this.updateContinueButton();
+        
+        // Show a brief confirmation
+        this.showNotification('All preferences cleared!', 'success');
     }
 
     // Bind event listeners
@@ -104,6 +128,9 @@ class BookScanner {
         document.getElementById('continueBtn').addEventListener('click', () => this.nextStep());
         document.getElementById('backToPreferencesBtn').addEventListener('click', () => this.previousStep());
         document.getElementById('getRecommendationsBtn').addEventListener('click', () => this.getRecommendations());
+        
+        // Clear all preferences button
+        document.getElementById('clearAllBtn').addEventListener('click', () => this.clearAllPreferences());
 
         // File upload
         const fileInput = document.getElementById('fileInput');
@@ -294,9 +321,9 @@ class BookScanner {
             const rating = book.average_rating || null;
             const ratingsCount = book.ratings_count || 0;
             
-            // Create cover image or placeholder
+            // Create cover image or placeholder - original size
             const coverHtml = coverUrl ? 
-                `<img src="${coverUrl}" alt="${title}" style="width: 100%; height: 120px; object-fit: cover; border-radius: 8px 8px 0 0;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">` :
+                `<img src="${coverUrl}" alt="${title}" style="width: 100%; height: auto; border-radius: 8px 8px 0 0;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">` :
                 '';
             
             // Create rating display
@@ -308,21 +335,52 @@ class BookScanner {
                 </div>` : '';
             
             bookElement.innerHTML = `
-                <div style="background: #2a2a2a; border-radius: 8px; overflow: hidden; height: 100%; display: flex; flex-direction: column;">
+                <div style="background: #2a2a2a; border-radius: 8px; overflow: hidden; display: flex; flex-direction: column; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); height: 100%;">
                     ${coverHtml}
-                    <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; color: white; font-size: 0.7rem; text-align: center; padding: 8px; ${coverUrl ? 'border-radius: 0 0 8px 8px;' : 'border-radius: 8px;'}">
-                        <div style="font-weight: bold; margin-bottom: 4px;">${title.length > 15 ? title.substring(0, 15) + '...' : title}</div>
-                        <div style="font-size: 0.6rem; opacity: 0.9;">${author.length > 12 ? author.substring(0, 12) + '...' : author}</div>
-                        <div style="font-size: 0.5rem; opacity: 0.8; margin-top: 2px;">${genre}</div>
-                        ${matchingGenres ? `<div style="font-size: 0.5rem; opacity: 0.7; margin-top: 2px;">✓ ${matchingGenres}</div>` : ''}
-                        ${ratingHtml}
+                    <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 10px 8px; flex: 1; display: flex; flex-direction: column; justify-content: space-between; ${coverUrl ? 'border-radius: 0 0 8px 8px;' : 'border-radius: 8px;'}">
+                        <div>
+                            <!-- Book Title -->
+                            <div style="font-weight: 600; font-size: 0.75rem; color: #ffffff; margin-bottom: 4px; line-height: 1.2; text-align: center;">
+                                ${title.length > 18 ? title.substring(0, 18) + '...' : title}
+                            </div>
+                            
+                            <!-- Author -->
+                            <div style="font-size: 0.65rem; color: #e0e0e0; margin-bottom: 4px; text-align: center; opacity: 0.9;">
+                                by ${author.length > 16 ? author.substring(0, 16) + '...' : author}
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <!-- Rating -->
+                            ${rating ? `
+                            <div style="display: flex; align-items: center; justify-content: center; gap: 3px; margin-bottom: 4px;">
+                                <div style="display: flex; align-items: center; gap: 2px;">
+                                    <span style="color: #ffd700; font-size: 0.65rem;">★</span>
+                                    <span style="font-size: 0.65rem; color: #ffffff; font-weight: 500;">${rating}</span>
+                                </div>
+                                ${ratingsCount > 0 ? `<span style="font-size: 0.55rem; color: #b0b0b0;">(${ratingsCount})</span>` : ''}
+                            </div>
+                            ` : ''}
+                            
+                            <!-- Matching Genres -->
+                            ${matchingGenres ? `
+                            <div style="font-size: 0.55rem; color: #90ee90; text-align: center; opacity: 0.9;">
+                                ✓ ${matchingGenres.length > 12 ? matchingGenres.substring(0, 12) + '...' : matchingGenres}
+                            </div>
+                            ` : ''}
+                        </div>
                     </div>
-                    ${!coverUrl ? `<div style="background: #333; height: 120px; display: flex; align-items: center; justify-content: center; color: #666; font-size: 0.6rem;">No Cover</div>` : ''}
+                    ${!coverUrl ? `<div style="background: #333; height: 196px; display: flex; align-items: center; justify-content: center; color: #666; font-size: 0.6rem;">No Cover</div>` : ''}
                 </div>
             `;
             
-            // Add click handler to show book details
-            bookElement.addEventListener('click', () => this.showBookDetails(book));
+            // Remove click handler - no modal in step 2
+            bookElement.style.cursor = 'default';
+            bookElement.addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                return false;
+            });
             detectedBooksGrid.appendChild(bookElement);
         });
         
@@ -434,8 +492,102 @@ class BookScanner {
             .slice(0, 6);
     }
 
+    // Render detected books in step 3
+    renderDetectedBooksInStep3() {
+        console.log('🎯 Rendering detected books in step 3...', this.detectedBooks.length);
+        const detectedBooksGrid = document.getElementById('detectedBooksGridStep3');
+        const detectedBooksCount = document.getElementById('detectedBooksCountStep3');
+        
+        if (!detectedBooksGrid || !detectedBooksCount) {
+            console.error('❌ Missing elements:', { detectedBooksGrid, detectedBooksCount });
+            return;
+        }
+        
+        detectedBooksCount.textContent = this.detectedBooks.length;
+        
+        detectedBooksGrid.innerHTML = '';
+        
+        this.detectedBooks.forEach(book => {
+            const bookElement = document.createElement('div');
+            bookElement.className = 'recommendation-card';
+            
+            // Create a detailed book card similar to recommendation cards
+            const title = book.title || 'Unknown Title';
+            const author = book.author || 'Unknown Author';
+            const matchingGenres = book.matching_genres ? book.matching_genres.join(', ') : '';
+            const coverUrl = book.cover_url || null;
+            const rating = book.average_rating || null;
+            const ratingsCount = book.ratings_count || 0;
+            const fullDescription = book.description || book.synopsis || 'No description available.';
+            const shortDescription = fullDescription.length > 200 ? fullDescription.substring(0, 200) + '...' : fullDescription;
+            const matchReasoning = book.match_reasoning || 'This book aligns with your reading preferences and offers compelling content that matches your interests.';
+            
+            // Create cover image or placeholder
+            const coverHtml = coverUrl ? 
+                `<img src="${coverUrl}" alt="${title}" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">` :
+                '';
+            
+            // Create rating stars
+            const ratingStars = rating ? '★'.repeat(Math.floor(rating)) + '☆'.repeat(5 - Math.floor(rating)) : '';
+            
+            bookElement.innerHTML = `
+                <div class="recommendation-cover">
+                    ${coverHtml}
+                    <div class="no-cover" style="display: none; flex-direction: column; align-items: center; justify-content: center; height: 100%; color: #666;">
+                        <i class="fas fa-book" style="font-size: 2rem; margin-bottom: 8px;"></i>
+                        <span>No Cover Available</span>
+                    </div>
+                    <div class="cover-overlay">
+                        ${rating ? `
+                        <div class="rating-display">
+                            <span class="rating-stars">${ratingStars}</span>
+                            <span class="rating-number">${rating}</span>
+                        </div>
+                        ` : ''}
+                        <div class="match-badge">Great match</div>
+                    </div>
+                </div>
+                
+                <div class="recommendation-details">
+                    <h3 class="recommendation-title">${title}</h3>
+                    <p class="recommendation-author">by ${author}</p>
+                    
+                    <div class="match-reason">
+                        <div class="match-reason-label">Why This Matches You:</div>
+                        <p class="match-reason-text">${matchReasoning}</p>
+                    </div>
+                    
+                    <p class="recommendation-description">${shortDescription}</p>
+                    ${fullDescription.length > 200 ? `<span class="description-toggle" onclick="this.previousElementSibling.innerHTML='${fullDescription.replace(/'/g, "\\'")}'; this.style.display='none';">Read More</span>` : ''}
+                    
+                    <div class="recommendation-actions">
+                        
+                        
+                    </div>
+                </div>
+            `;
+            
+            // Remove click handler - no modal in step 3
+            bookElement.style.cursor = 'default';
+            bookElement.addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                return false;
+            });
+            detectedBooksGrid.appendChild(bookElement);
+        });
+        
+        const detectedBooksSection = document.getElementById('detectedBooksSectionStep3');
+        if (detectedBooksSection) {
+            detectedBooksSection.style.display = 'block';
+        }
+    }
+
     // Render recommendations
     renderRecommendations() {
+        // First render the detected books in step 3
+        this.renderDetectedBooksInStep3();
+        
         const booksGrid = document.getElementById('booksGrid');
         booksGrid.innerHTML = '';
 
@@ -777,6 +929,48 @@ class BookScanner {
         // Remove after 3 seconds
         setTimeout(() => {
             document.body.removeChild(toast);
+        }, 3000);
+    }
+
+    // Show notification message
+    showNotification(message, type = 'info') {
+        const notification = document.createElement('div');
+        notification.className = `notification notification-${type}`;
+        notification.style.cssText = `
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: ${type === 'success' ? '#28a745' : type === 'error' ? '#dc3545' : '#667eea'};
+            color: white;
+            padding: 12px 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+            font-size: 0.9rem;
+            font-weight: 500;
+            opacity: 0;
+            transform: translateX(100%);
+            transition: all 0.3s ease;
+        `;
+        notification.textContent = message;
+        
+        document.body.appendChild(notification);
+        
+        // Animate in
+        setTimeout(() => {
+            notification.style.opacity = '1';
+            notification.style.transform = 'translateX(0)';
+        }, 100);
+        
+        // Remove after 3 seconds
+        setTimeout(() => {
+            notification.style.opacity = '0';
+            notification.style.transform = 'translateX(100%)';
+            setTimeout(() => {
+                if (document.body.contains(notification)) {
+                    document.body.removeChild(notification);
+                }
+            }, 300);
         }, 3000);
     }
 }

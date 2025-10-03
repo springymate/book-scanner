@@ -1,0 +1,696 @@
+{
+  "file_id": "6419ad82-368d-4b26-a39f-63b84e1b6c43",
+  "all_books": [
+    {
+      "title": "Wild",
+      "author": "Cheryl Strayed",
+      "genre": "Biography",
+      "primary_genre": "Memoir",
+      "secondary_genre": "Adventure",
+      "tertiary_genre": "Non-fiction",
+      "spine_appearance": "The spine features a bold red background with the author's name in a smaller, lighter font at the top and the title in a larger, more prominent font below.",
+      "reasoning": "The title \"Wild\" is the most prominent text, indicating it is the book's title. The author's name, \"Cheryl Strayed,\" appears in smaller text, consistent with typical book spine layouts. The color and font suggest a personal and adventurous theme, aligning with the memoir genre.",
+      "uncertainty_notes": "None",
+      "isValid": true,
+      "rawText": "Vision Analysis",
+      "book_number": 4,
+      "bbox_coordinates": [
+        [
+          0.4978472888469696,
+          7.487534046173096
+        ],
+        [
+          34.01151657104492,
+          7.487534046173096
+        ],
+        [
+          34.01151657104492,
+          183.64108276367188
+        ],
+        [
+          0.4978472888469696,
+          183.64108276367188
+        ]
+      ],
+      "center": [
+        17.254682540893555,
+        95.5643081665039
+      ],
+      "width": 33.513668060302734,
+      "height": 176.15354919433594,
+      "angle": 0.0,
+      "crop_coordinates": {
+        "x_min": 0,
+        "y_min": 0,
+        "x_max": 33,
+        "y_max": 176
+      },
+      "confidence": "high",
+      "genre_confidence": "high",
+      "matching_genres": [
+        "Non-Fiction"
+      ],
+      "match_score": 1.0
+    },
+    {
+      "title": "The Care of Wooden Floors",
+      "author": "Unknown",
+      "genre": "Fiction",
+      "primary_genre": "Fiction",
+      "secondary_genre": "Literary Fiction",
+      "tertiary_genre": "Contemporary Fiction",
+      "spine_appearance": "Yellow background with a prominent title and smaller author text.",
+      "reasoning": "The title \"The Care of Wooden Floors\" is the most prominent text, indicating it is the book title. The author’s name appears smaller, suggesting it is the author. The color and font style suggest a contemporary literary genre.",
+      "uncertainty_notes": "Need Validation - Author name is unclear.",
+      "isValid": false,
+      "rawText": "Vision Analysis",
+      "book_number": 7,
+      "bbox_coordinates": [
+        [
+          25.412456512451172,
+          31.15191078186035
+        ],
+        [
+          62.276390075683594,
+          31.15191078186035
+        ],
+        [
+          62.276390075683594,
+          183.49562072753906
+        ],
+        [
+          25.412456512451172,
+          183.49562072753906
+        ]
+      ],
+      "center": [
+        43.844425201416016,
+        107.32376098632812
+      ],
+      "width": 36.86393356323242,
+      "height": 152.3437042236328,
+      "angle": 0.0,
+      "crop_coordinates": {
+        "x_min": 0,
+        "y_min": 0,
+        "x_max": 36,
+        "y_max": 152
+      },
+      "confidence": "low",
+      "genre_confidence": "high",
+      "matching_genres": [
+        "Non-Fiction"
+      ],
+      "match_score": 1.0
+    },
+    {
+      "title": "None",
+      "author": "None",
+      "genre": "Fiction",
+      "primary_genre": "None",
+      "secondary_genre": "None",
+      "tertiary_genre": "None",
+      "spine_appearance": "The spine features a yellow background with some text that appears to be larger at the top and smaller at the bottom, but the specifics are unclear.",
+      "reasoning": "The visual hierarchy suggests a title at the top and an author at the bottom, but the text is not legible enough to confirm any details.",
+      "uncertainty_notes": "The text is partially obscured, and the image quality does not allow for clear reading of the title or author.",
+      "isValid": true,
+      "rawText": "Vision Analysis",
+      "book_number": 10,
+      "bbox_coordinates": [
+        [
+          40.675750732421875,
+          28.685945510864258
+        ],
+        [
+          80.63482666015625,
+          28.685945510864258
+        ],
+        [
+          80.63482666015625,
+          182.40797424316406
+        ],
+        [
+          40.675750732421875,
+          182.40797424316406
+        ]
+      ],
+      "center": [
+        60.65528869628906,
+        105.54695892333984
+      ],
+      "width": 39.959075927734375,
+      "height": 153.72203063964844,
+      "angle": 0.0,
+      "crop_coordinates": {
+        "x_min": 0,
+        "y_min": 0,
+        "x_max": 39,
+        "y_max": 153
+      },
+      "confidence": "high",
+      "genre_confidence": "high"
+    },
+    {
+      "title": "",
+      "author": "",
+      "genre": "Fiction",
+      "primary_genre": "",
+      "secondary_genre": "",
+      "tertiary_genre": "",
+      "spine_appearance": "",
+      "reasoning": "",
+      "uncertainty_notes": "",
+      "isValid": false,
+      "rawText": "Vision Analysis",
+      "book_number": 11,
+      "bbox_coordinates": [
+        [
+          64.23577117919922,
+          41.74421691894531
+        ],
+        [
+          95.51756286621094,
+          41.74421691894531
+        ],
+        [
+          95.51756286621094,
+          181.89842224121094
+        ],
+        [
+          64.23577117919922,
+          181.89842224121094
+        ]
+      ],
+      "center": [
+        79.87666320800781,
+        111.82131958007812
+      ],
+      "width": 31.28179168701172,
+      "height": 140.15420532226562,
+      "angle": 0.0,
+      "crop_coordinates": {
+        "x_min": 0,
+        "y_min": 0,
+        "x_max": 31,
+        "y_max": 140
+      },
+      "confidence": "low",
+      "genre_confidence": "high"
+    },
+    {
+      "title": "The Unabridged Journals of Sylvia Plath",
+      "author": "Sylvia Plath",
+      "genre": "Biography",
+      "primary_genre": "Biography",
+      "secondary_genre": "Literary Non-Fiction",
+      "tertiary_genre": "Poetry",
+      "spine_appearance": "The spine features a dark background with a prominent illustration of a figure, likely related to the author. The title is in a larger font, while the author's name is in a smaller font below it.",
+      "reasoning": "The title \"The Unabridged Journals of\" is the most prominent text, indicating it is the title of the book. The name \"SYLVIA PLATH\" is in a smaller font, suggesting it is the author. The dark color scheme and the presence of an illustration suggest a literary or biographical genre.",
+      "uncertainty_notes": "None",
+      "isValid": true,
+      "rawText": "Vision Analysis",
+      "book_number": 5,
+      "bbox_coordinates": [
+        [
+          73.73590850830078,
+          35.70273208618164
+        ],
+        [
+          130.28761291503906,
+          35.70273208618164
+        ],
+        [
+          130.28761291503906,
+          182.50668334960938
+        ],
+        [
+          73.73590850830078,
+          182.50668334960938
+        ]
+      ],
+      "center": [
+        102.01176452636719,
+        109.10470581054688
+      ],
+      "width": 56.55170440673828,
+      "height": 146.803955078125,
+      "angle": 0.0,
+      "crop_coordinates": {
+        "x_min": 0,
+        "y_min": 0,
+        "x_max": 56,
+        "y_max": 146
+      },
+      "confidence": "high",
+      "genre_confidence": "high",
+      "matching_genres": [
+        "Non-Fiction"
+      ],
+      "match_score": 1.0
+    },
+    {
+      "title": "",
+      "author": "",
+      "genre": "Fiction",
+      "primary_genre": "Primary Genre",
+      "secondary_genre": "Secondary Genre",
+      "tertiary_genre": "Tertiary Genre",
+      "spine_appearance": "",
+      "reasoning": "",
+      "uncertainty_notes": "None",
+      "isValid": false,
+      "rawText": "Vision Analysis",
+      "book_number": 9,
+      "bbox_coordinates": [
+        [
+          103.60936737060547,
+          47.45697021484375
+        ],
+        [
+          151.9954071044922,
+          47.45697021484375
+        ],
+        [
+          151.9954071044922,
+          182.14053344726562
+        ],
+        [
+          103.60936737060547,
+          182.14053344726562
+        ]
+      ],
+      "center": [
+        127.80238342285156,
+        114.79875183105469
+      ],
+      "width": 48.38603973388672,
+      "height": 134.68356323242188,
+      "angle": 0.0,
+      "crop_coordinates": {
+        "x_min": 0,
+        "y_min": 0,
+        "x_max": 48,
+        "y_max": 134
+      },
+      "confidence": "low",
+      "genre_confidence": "high"
+    },
+    {
+      "title": "Suite Française",
+      "author": "Irène Némirovsky",
+      "genre": "Fiction",
+      "primary_genre": "Historical Fiction",
+      "secondary_genre": "Literary Fiction",
+      "tertiary_genre": "Drama",
+      "spine_appearance": "The title \"Suite Française\" is prominently displayed in large text, while the author's name \"Irène Némirovsky\" appears in smaller text, indicating the author. The spine has a simple and elegant design, typical of literary works.",
+      "reasoning": "The title is the most prominent text, suggesting it is the main focus, while the author's name is smaller and positioned below the title, consistent with common book spine layouts. The genre is inferred from the title and author, who is known for literary and historical themes.",
+      "uncertainty_notes": "None",
+      "isValid": true,
+      "rawText": "Vision Analysis",
+      "book_number": 1,
+      "bbox_coordinates": [
+        [
+          116.74796295166016,
+          23.26822280883789
+        ],
+        [
+          180.1493377685547,
+          23.26822280883789
+        ],
+        [
+          180.1493377685547,
+          182.91757202148438
+        ],
+        [
+          116.74796295166016,
+          182.91757202148438
+        ]
+      ],
+      "center": [
+        148.4486541748047,
+        103.0928955078125
+      ],
+      "width": 63.40137481689453,
+      "height": 159.64935302734375,
+      "angle": 0.0,
+      "crop_coordinates": {
+        "x_min": 0,
+        "y_min": 0,
+        "x_max": 63,
+        "y_max": 159
+      },
+      "confidence": "high",
+      "genre_confidence": "high"
+    },
+    {
+      "title": "Suite Française",
+      "author": "Irène Némirovsky",
+      "genre": "Fiction",
+      "primary_genre": "Historical Fiction",
+      "secondary_genre": "Literary Fiction",
+      "tertiary_genre": "Drama",
+      "spine_appearance": "The spine features a prominent title in large text, with the author's name in smaller text below it. The color scheme is muted, suggesting a serious tone.",
+      "reasoning": "The title \"Suite Française\" is the most prominent text, indicating it is the title of the book. The smaller text \"Irène Némirovsky\" suggests it is the author's name. The layout follows the common pattern of larger title text and smaller author text. The genre is inferred from the title and the author's known works.",
+      "uncertainty_notes": "None",
+      "isValid": true,
+      "rawText": "Vision Analysis",
+      "book_number": 3,
+      "bbox_coordinates": [
+        [
+          135.18336486816406,
+          23.12955665588379
+        ],
+        [
+          207.45877075195312,
+          23.12955665588379
+        ],
+        [
+          207.45877075195312,
+          182.8761749267578
+        ],
+        [
+          135.18336486816406,
+          182.8761749267578
+        ]
+      ],
+      "center": [
+        171.32107543945312,
+        103.00286865234375
+      ],
+      "width": 72.27540588378906,
+      "height": 159.74661254882812,
+      "angle": 0.0,
+      "crop_coordinates": {
+        "x_min": 0,
+        "y_min": 0,
+        "x_max": 72,
+        "y_max": 159
+      },
+      "confidence": "high",
+      "genre_confidence": "high"
+    },
+    {
+      "title": "None",
+      "author": "None",
+      "genre": "Fiction",
+      "primary_genre": "None",
+      "secondary_genre": "None",
+      "tertiary_genre": "None",
+      "spine_appearance": "The spines feature a mix of dark and light colors, with varying text sizes and styles.",
+      "reasoning": "The text patterns are not fully legible, and there are no clear indicators of titles or authors. The layout suggests multiple books, but specific details cannot be determined.",
+      "uncertainty_notes": "Text is partially illegible, making it impossible to identify title, author, or genres accurately.",
+      "isValid": true,
+      "rawText": "Vision Analysis",
+      "book_number": 8,
+      "bbox_coordinates": [
+        [
+          159.66795349121094,
+          34.5217170715332
+        ],
+        [
+          226.2815704345703,
+          34.5217170715332
+        ],
+        [
+          226.2815704345703,
+          181.9362335205078
+        ],
+        [
+          159.66795349121094,
+          181.9362335205078
+        ]
+      ],
+      "center": [
+        192.97476196289062,
+        108.22897338867188
+      ],
+      "width": 66.61361694335938,
+      "height": 147.41452026367188,
+      "angle": 0.0,
+      "crop_coordinates": {
+        "x_min": 0,
+        "y_min": 0,
+        "x_max": 66,
+        "y_max": 147
+      },
+      "confidence": "high",
+      "genre_confidence": "high"
+    },
+    {
+      "title": "None",
+      "author": "None",
+      "genre": "Fiction",
+      "primary_genre": "None",
+      "secondary_genre": "None",
+      "tertiary_genre": "None",
+      "spine_appearance": "The spines show a mix of colors and styles, but specific details are not discernible.",
+      "reasoning": "The text is not fully legible, and there are no clear patterns to identify the title or author.",
+      "uncertainty_notes": "The text is completely illegible or missing, and no recognizable patterns match any standard book spine layout.",
+      "isValid": true,
+      "rawText": "Vision Analysis",
+      "book_number": 2,
+      "bbox_coordinates": [
+        [
+          171.3839874267578,
+          26.897071838378906
+        ],
+        [
+          247.7674560546875,
+          26.897071838378906
+        ],
+        [
+          247.7674560546875,
+          181.93263244628906
+        ],
+        [
+          171.3839874267578,
+          181.93263244628906
+        ]
+      ],
+      "center": [
+        209.57571411132812,
+        104.41485595703125
+      ],
+      "width": 76.38346862792969,
+      "height": 155.03555297851562,
+      "angle": 0.0,
+      "crop_coordinates": {
+        "x_min": 0,
+        "y_min": 0,
+        "x_max": 76,
+        "y_max": 155
+      },
+      "confidence": "high",
+      "genre_confidence": "high"
+    },
+    {
+      "title": "None",
+      "author": "None",
+      "genre": "Fiction",
+      "primary_genre": "None",
+      "secondary_genre": "None",
+      "tertiary_genre": "None",
+      "spine_appearance": "The spine appears to have a dark background with some text and possibly a logo or symbol, but details are not clear.",
+      "reasoning": "The text is not fully legible, and the visual hierarchy is not discernible due to the image quality and positioning of the books.",
+      "uncertainty_notes": "The text is partially obscured, and I cannot determine any recognizable patterns or elements that would indicate the title, author, or genres.",
+      "isValid": false,
+      "rawText": "Vision Analysis",
+      "book_number": 6,
+      "bbox_coordinates": [
+        [
+          190.21697998046875,
+          20.93739128112793
+        ],
+        [
+          259.0,
+          20.93739128112793
+        ],
+        [
+          259.0,
+          180.681640625
+        ],
+        [
+          190.21697998046875,
+          180.681640625
+        ]
+      ],
+      "center": [
+        224.60848999023438,
+        100.80951690673828
+      ],
+      "width": 68.78302001953125,
+      "height": 159.74424743652344,
+      "angle": 0.0,
+      "crop_coordinates": {
+        "x_min": 0,
+        "y_min": 0,
+        "x_max": 68,
+        "y_max": 159
+      },
+      "confidence": "low",
+      "genre_confidence": "high"
+    }
+  ],
+  "filtered_books": [
+    {
+      "title": "Wild",
+      "author": "Cheryl Strayed",
+      "genre": "Biography",
+      "primary_genre": "Memoir",
+      "secondary_genre": "Adventure",
+      "tertiary_genre": "Non-fiction",
+      "spine_appearance": "The spine features a bold red background with the author's name in a smaller, lighter font at the top and the title in a larger, more prominent font below.",
+      "reasoning": "The title \"Wild\" is the most prominent text, indicating it is the book's title. The author's name, \"Cheryl Strayed,\" appears in smaller text, consistent with typical book spine layouts. The color and font suggest a personal and adventurous theme, aligning with the memoir genre.",
+      "uncertainty_notes": "None",
+      "isValid": true,
+      "rawText": "Vision Analysis",
+      "book_number": 4,
+      "bbox_coordinates": [
+        [
+          0.4978472888469696,
+          7.487534046173096
+        ],
+        [
+          34.01151657104492,
+          7.487534046173096
+        ],
+        [
+          34.01151657104492,
+          183.64108276367188
+        ],
+        [
+          0.4978472888469696,
+          183.64108276367188
+        ]
+      ],
+      "center": [
+        17.254682540893555,
+        95.5643081665039
+      ],
+      "width": 33.513668060302734,
+      "height": 176.15354919433594,
+      "angle": 0.0,
+      "crop_coordinates": {
+        "x_min": 0,
+        "y_min": 0,
+        "x_max": 33,
+        "y_max": 176
+      },
+      "confidence": "high",
+      "genre_confidence": "high",
+      "matching_genres": [
+        "Non-Fiction"
+      ],
+      "match_score": 1.0
+    },
+    {
+      "title": "The Care of Wooden Floors",
+      "author": "Unknown",
+      "genre": "Fiction",
+      "primary_genre": "Fiction",
+      "secondary_genre": "Literary Fiction",
+      "tertiary_genre": "Contemporary Fiction",
+      "spine_appearance": "Yellow background with a prominent title and smaller author text.",
+      "reasoning": "The title \"The Care of Wooden Floors\" is the most prominent text, indicating it is the book title. The author’s name appears smaller, suggesting it is the author. The color and font style suggest a contemporary literary genre.",
+      "uncertainty_notes": "Need Validation - Author name is unclear.",
+      "isValid": false,
+      "rawText": "Vision Analysis",
+      "book_number": 7,
+      "bbox_coordinates": [
+        [
+          25.412456512451172,
+          31.15191078186035
+        ],
+        [
+          62.276390075683594,
+          31.15191078186035
+        ],
+        [
+          62.276390075683594,
+          183.49562072753906
+        ],
+        [
+          25.412456512451172,
+          183.49562072753906
+        ]
+      ],
+      "center": [
+        43.844425201416016,
+        107.32376098632812
+      ],
+      "width": 36.86393356323242,
+      "height": 152.3437042236328,
+      "angle": 0.0,
+      "crop_coordinates": {
+        "x_min": 0,
+        "y_min": 0,
+        "x_max": 36,
+        "y_max": 152
+      },
+      "confidence": "low",
+      "genre_confidence": "high",
+      "matching_genres": [
+        "Non-Fiction"
+      ],
+      "match_score": 1.0
+    },
+    {
+      "title": "The Unabridged Journals of Sylvia Plath",
+      "author": "Sylvia Plath",
+      "genre": "Biography",
+      "primary_genre": "Biography",
+      "secondary_genre": "Literary Non-Fiction",
+      "tertiary_genre": "Poetry",
+      "spine_appearance": "The spine features a dark background with a prominent illustration of a figure, likely related to the author. The title is in a larger font, while the author's name is in a smaller font below it.",
+      "reasoning": "The title \"The Unabridged Journals of\" is the most prominent text, indicating it is the title of the book. The name \"SYLVIA PLATH\" is in a smaller font, suggesting it is the author. The dark color scheme and the presence of an illustration suggest a literary or biographical genre.",
+      "uncertainty_notes": "None",
+      "isValid": true,
+      "rawText": "Vision Analysis",
+      "book_number": 5,
+      "bbox_coordinates": [
+        [
+          73.73590850830078,
+          35.70273208618164
+        ],
+        [
+          130.28761291503906,
+          35.70273208618164
+        ],
+        [
+          130.28761291503906,
+          182.50668334960938
+        ],
+        [
+          73.73590850830078,
+          182.50668334960938
+        ]
+      ],
+      "center": [
+        102.01176452636719,
+        109.10470581054688
+      ],
+      "width": 56.55170440673828,
+      "height": 146.803955078125,
+      "angle": 0.0,
+      "crop_coordinates": {
+        "x_min": 0,
+        "y_min": 0,
+        "x_max": 56,
+        "y_max": 146
+      },
+      "confidence": "high",
+      "genre_confidence": "high",
+      "matching_genres": [
+        "Non-Fiction"
+      ],
+      "match_score": 1.0
+    }
+  ],
+  "selected_genres": [
+    "Non-Fiction"
+  ],
+  "genre_matches": {
+    "Non-Fiction": 3
+  },
+  "analysis_timestamp": "C:\\Users\\yash.jain\\OneDrive - Heuristics Informatics Pvt. Ltd\\Desktop\\Python\\Bookself scanner\\book-scanner-main"
+}
